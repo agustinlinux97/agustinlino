@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Agustín Lino</title>
+</head>
+<body>
+    <header id="main-header">
+        <div class="titulo">
+            <div>AGUSTÍN LINO</div>
+            <div>AGUSTÍN LINO</div>
+        </div>
+        <div class="button-container">
+            <a href="#bio"><div class="custom-button btn1">BIO</div></a>
+            <a href="#trabajos"><div class="custom-button btn2">TRABAJOS</div></a>
+            <a href="#contacto"><div class="custom-button btn3">CONTACTO</div></a>
+        </div>
+    </header>
+    <main>
+        <!-- BIOGRAFIA -->
+        <section id="bio">
+            <div data-aos="zoom-in" data-aos-duration="2000">
+                <div class="containerBio">
+                    <div class="card">
+                        <div class="card-info">
+                            <h3>10 años disfrutando del proceso de producir música.</h3>
+                            <p>La parte técnica de una grabación, la parte de elegir los sonidos, la de jugar con climas, estéticas, efectos, entre otras cosas, es quizás las cosas que más me divierten en la vida.</p>
+                            <p>Empecé a producir como curioseando cuando tenía 16 años en mi ciudad de Esquel, provincia de Chubut, Argentina; y continúo trabajando y en constante aprendizaje en la ciudad de Córdoba Capital.</p>
+                            <p>He participado en proyectos musicales de toda clase de géneros. Comencé con bandas de rock, punk, metal, indie; luego pasé por proyectos más acústicos, relacionados al folklore argentino, músicas regionales; también por diversas ramas de la música electrónica como el house, dance, synth pop; y también he trabajado en mucha música de tipo cumbia, cuarteto, comercial, entre otros.</p>
+                            <p>En muchos de estos proyectos además de haber participado en el área del audio también pude aportar como músico tocando varios instrumentos, como teclados, guitarras, bajos, violines o percusiones.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/nat-weerawong-fWvFfacQFDo-unsplash.jpg" alt="Imagen" id="imagenBio">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- TRABAJOS -->
+            <section id="trabajos">
+                <div class="flextrabajos" data-aos="zoom-in" data-aos-duration="2000">
+                    <div class="container">
+                        <div class="card">
+                            <div class="card-info">
+                                <h2>TRABAJOS</h2>
+                                <h3>Podes encontrar algunos de mis trabajos en esta playlist de YouTube.</h3>
+                                <p>Esta lista reúne participaciones en:</p>
+                                    <li>PRE-PRODUCCIÓN</li>
+                                    <li>PRODUCCIÓN</li>
+                                    <li>GRABACIÓN</li>
+                                    <li>MÚSICO</li>
+                                    <li>MEZCLA</li>
+                                    <li>MASTERING</li>
+                                    
+                                    <div class="separador"></div>
+                                <p><small>Si querés escuchar algunos trabajos en formatos con mayor fidelidad al audio original te invito a visitar el link que te dejo a continuación.</small></p>
+                                <a href="https://drive.google.com" class="trabajosButton">TRABAJOS EN FORMATO WAV</a>
+                                
+                            </div>
+                        </div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLSBqrpyxxbyKWZvN-5kT0LXK71fPA2PR5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+            <!-- CONTACTO -->
+            <section id="contacto">
+                    <div class="contactoForm">
+                        <div class="card">
+                            <div class="card-info">
+                                <h2>CONTACTARSE</h2>
+                            <form action="post">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre"><br/>
+                                <label for="mail">E-mail</label>
+                                <input type="text" id="mail"><br/>
+                                <label for="mensaje">Escribí tu mensaje</label>
+                                <input type="text" id="mensaje"><br/>
+                                <button type="submit" class="trabajosButton">ENVIAR</button>
+                            </form>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-info contactoRight">
+                                <span><img src="images/llamada.png" alt="Teléfono" id="iconosContacto"><h3>2945-403921</h3></span>
+                                <span><img src="images/email.png" alt="E-mail" id="iconosContacto"><h3>agustinlinoesquel@gmail.com</h3></span><br/>
+                                <div class="social">
+                                    <div><a href="https://linkedin.com"><img src="images/linkedin.png" id="iconosSociales" alt="Linkedin"></a></div>
+                                    <div><a href="https://linkedin.com"><img src="images/facebook.png" id="iconosSociales" alt="Linkedin"></a></div>
+                                    <div><a href="https://linkedin.com"><img src="images/instagram.png" id="iconosSociales" alt="Linkedin"></a></div>
+                                    <div><a href="https://linkedin.com"><img src="images/youtube.png" id="iconosSociales" alt="Linkedin"></a></div>
+                                    <div><a href="https://linkedin.com"><img src="images/github.png" id="iconosSociales" alt="Linkedin"></a></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+            </section>
+        </main>
+
+        <script src="code.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
+    </body>
+</html>
