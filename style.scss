@@ -151,6 +151,7 @@ main {
 .containerBio {
     display:flex;
     align-items: stretch;
+    flex-wrap: nowrap;
     justify-content: space-between;
     line-height: 25px;
     gap: 20px;
@@ -181,7 +182,6 @@ main {
     line-height: 25px;
     display: flex;
     flex-direction: row;
-    align-items: stretch;
     gap: 20px;
 }
 .card {
@@ -266,6 +266,8 @@ main {
 }
 iframe {
     border-radius: 10px;
+    width:560px;
+    height:315px;
 }
 // MEDIA QUERIES RESPONSIVE
 @media screen and (max-width:1400px){
@@ -276,6 +278,9 @@ iframe {
 @media screen and (max-width:1000px){
     #bio, #trabajos, #contacto{
         padding: 40px;
+    }
+    #imagenBio {
+        width: 350px;
     }
     .container {
         flex-direction: column;
@@ -291,19 +296,51 @@ iframe {
             line-height: 30px;
         }
     }
+
+}
+
+@media screen and (max-width:800px) {
+    .containerBio {
+        flex-wrap: wrap ;
+    }
+    .contactoForm {
+        flex-wrap: wrap;
+    }
+    iframe {
+        width: 400px;
+        height: 250px;
+    }
 }
 @media screen and (max-width:600px){
     #bio, #trabajos, #contacto{
-        padding: 40px;
+        padding: 20px;
+    }
+    .custom-button {
+        width: 90px;
+    }
+    #trabajos {
+        .card {
+        max-width: 80%;
+    }
+    .titulo {
+        font-weight: 600;
+        font-size: 25px;
     }
 }
 @media screen and (max-width: 480px){
     .titulo {
         font-weight: 600;
-        font-size: 36px;}
+        font-size: 36px;
+    }
     .custom-button {
         width: 60px;
         height: 60px;}
+    #bio, #trabajos, #contacto {
+        padding: 15px;
+    }
+    
+    
+}
 }
 // LINKS
 a {
@@ -349,6 +386,7 @@ small {
     font-weight: 300;
     line-height: 15px;
 }
+// FORM
 form {
     display: flex;
     flex-direction: column;
@@ -359,7 +397,8 @@ label {
 }
 input {
     padding: 5px;
-    width: 700px;
+    display: block;
+    width: 100%;
 }
 input:last-of-type{
     height: 200px;
@@ -376,7 +415,7 @@ button{
     justify-content: space-between;
     flex-grow:5;
     gap: 40px;
-    .card{
+    .card {
         width: 100%;
     }
 }
@@ -385,8 +424,6 @@ button{
     flex-direction: column;
     justify-items: center;
     align-items: flex-start;
-    flex-grow: 2;
-    
     h3 {
         margin-left: 5px;
         font-weight: 500;
@@ -395,8 +432,6 @@ button{
     }
     span {
         height: 25px;
-        *{
-        }
     }
 }
 #iconosContacto {
